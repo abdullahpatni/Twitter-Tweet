@@ -9,7 +9,7 @@ function ShowTweets() {
 	}, []);
 
 	function getDataFromAPI() {
-		axios.get("http://www.mocky.io/v2/5d1ef97d310000552febe99d").then((res) => {
+		axios.get("https://www.mocky.io/v2/5d1ef97d310000552febe99d").then((res) => {
 			let data = extractTweetIds(res.data);
 			setTweetIds(data);
 			console.log(TweetIds);
